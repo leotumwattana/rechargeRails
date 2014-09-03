@@ -1,0 +1,159 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*@import "bootstrap-sprockets";*/
+/*@import "bootstrap";*/
+@font-face {
+  font-family: FuturaLight;
+  src: url('FuturaLT-Light.ttf');
+}
+
+body {
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: FuturaLight;
+}
+
+header {
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+tr {
+  margin:10;
+}
+
+td {
+  text-align: left;
+  margin: 0 auto;
+  padding-right: 300px;
+}
+
+input {
+  border: 0;
+  border: solid 1px #ccc;
+  border-radius: 7px;
+  color: #aaa;
+  font-size: 1.3em;
+  margin: 0 0 20px;
+  padding: 10px;
+  width: 300px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+}
+
+input:-moz-placeholder {
+  color: #aaa;
+}
+.card {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.cap {
+  border: 4px solid rgba( 84, 56, 60, 0.9);
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 0 0 1px rgba( 213, 111, 100, 1), 0 0 0 5px rgba( 84, 56, 60, 0.9);
+  margin: 0 auto;
+  margin-bottom: 2px;
+  height: 55px;
+  width: 135px;
+}
+
+.cafe-container {
+  border: 4px solid rgba( 84, 56, 60, 0.9);
+  border-radius: 30px;
+  box-shadow: 0 0 0 1px rgba( 213, 111, 100, 1), 0 0 0 5px rgba( 84, 56, 60, 0.9);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  height: auto;
+  width: 340px;
+}
+
+.cafe-slot {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+  height: 55px;
+  width: 290px;
+}
+
+.cafe-slot p {
+  color: white;
+  font-size: 35px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 50%;
+  height: 50%;
+}
+
+#engage-Customers div {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+#coffee8{
+  background: rgba( 213, 111, 100, 1);
+  opacity: nil;
+}
+
+#coffee7{
+  background: rgba( 213, 111, 100, 1);
+  opacity: nil;
+}
+
+#coffee6{
+  background: rgba( 125, 159, 167, 1);
+  opacity: nil;
+}
+
+#coffee5{
+  background: rgba( 125, 159, 167, 1);
+  opacity: nil;
+}
+
+#coffee4{
+  background: rgba( 229, 186, 100, 1);
+  opacity: nil;
+}
+
+#coffee3{
+  background: rgba( 229, 186, 100, 1);
+  opacity: nil;
+}
+
+#coffee2{
+  background: rgba( 84, 56, 60, 1);
+  opacity: nil;
+}
+
+#coffee1{
+  background: rgba( 84, 56, 60, 1);
+  opacity: nil;
+}
+
+
+

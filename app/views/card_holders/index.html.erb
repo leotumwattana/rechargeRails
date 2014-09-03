@@ -1,0 +1,34 @@
+<table>
+<!--
+  <tr>
+    <th>Name</th>
+    <th>Current Charge</th>
+    <th>Email</th>
+  </tr> -->
+  <% @cardHolders.each do |cardHolder| %>
+    <tr>
+      <td>
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal<%= cardHolder.id %>">
+          <%= cardHolder.name %>
+        </button>
+        <div class="modal fade" id="myModal<%= cardHolder.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+             <div class="modal-content">
+                <p class= "textForCharge<%= cardHolder.currentCharge %>">
+                  <%= cardHolder.name %> has already drunk <%= cardHolder.currentCharge %> coffee
+                </p>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"> close </button>
+                  <form action ="/cardholders/<%= cardHolder.id %>" method="post">
+                    <input class ="inputForCharge<%= cardHolder.currentCharge %>" type="submit" value="+ 1">
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td><%= cardHolder.email %></td>
+      <td class="tdForCharge<%= cardHolder.currentCharge %>"><%= cardHolder.currentCharge %></td>
+    </tr>
+  <% end %>
+</table>
